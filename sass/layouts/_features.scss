@@ -1,0 +1,39 @@
+.features__list {
+  --grid-item: 1;
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+  }
+}
+.features__title {
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
+}
+.features__caption {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 0px;
+}
+
+.features__item::before {
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  min-width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--grey-bg-color);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@each $icon in antenna clock diagram astronaut {
+  .features__icon--#{$icon}::before {
+    background-image: url("../images/svg/#{$icon}.svg");
+  }
+}

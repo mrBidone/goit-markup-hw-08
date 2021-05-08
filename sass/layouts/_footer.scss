@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: var(--dark-bg-color);
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  color: var(--dark-bg-text-color);
+  text-align: center;
+}
+
+.footer__grid {
+  --grid-item: 1;
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+    align-items: baseline;
+  }
+}
+
+.footer__grid .grid__item:not(:last-child) {
+  margin-bottom: 30px;
+}
