@@ -18,52 +18,84 @@
 <body>
 	<!-- Header -->
 	<header class="page-header"> 
-		<div class="container page-header__container">
-			<nav class="page-header__nav">
-				<a class="logo page-header__logo link" href="./index.html"><span
-						class="logo__element--accent">Web</span><span
-						class="logo__element--normal">Studio</span></a>
-				<ul class="list site-nav site-nav--desktop">
-					<li class="site-nav__item"><a class="link site-nav__link site-nav__link--current"
-							href="./index.html">Студия</a></li>
-					<li class="site-nav__item"><a class="link site-nav__link" href="./portfolio.html">Портфолио</a></li>
-					<li class="site-nav__item"><a class="link site-nav__link" href="">Контакты</a></li>
+		<div class="container">
+			<div class="page-header__container">
+				<nav class="page-header__nav">
+					<a class="logo page-header__logo link" href="./index.html"><span
+							class="logo__element--accent">Web</span><span
+							class="logo__element--normal">Studio</span></a>
+					<ul class="list site-nav site-nav--desktop">
+						<li class="site-nav__item"><a class="link site-nav__link site-nav__link--current"
+								href="./index.html">Студия</a></li>
+						<li class="site-nav__item"><a class="link site-nav__link" href="./portfolio.html">Портфолио</a></li>
+						<li class="site-nav__item"><a class="link site-nav__link" href="">Контакты</a></li>
+					</ul>
+				</nav>
+				<ul class="list contact-nav page-header__contacts--wrap">
+					<li class="contact-nav__item">
+						<a class="link contact-nav__link" href="mailto:info@devstudio.com">
+							<svg class="contact-nav__icon" width="16" height="12">
+								<use href="./images/svg/sprite.svg#icon-mail"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li class="contact-nav__item">
+						<a class="link contact-nav__link" href="tel:+380961111111">
+							<svg class="contact-nav__icon" width="10" height="16">
+								<use href="./images/svg/sprite.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
 				</ul>
-			</nav>
-			<ul class="list contact-nav page-header__contacts--wrap">
-				<li class="contact-nav__item">
-					<a class="link contact-nav__link" href="mailto:info@devstudio.com">
-						<svg class="contact-nav__icon" width="16" height="12">
-							<use href="./images/svg/sprite.svg#icon-mail"></use>
-						</svg>
-						info@devstudio.com
-					</a>
-				</li>
-				<li class="contact-nav__item">
-					<a class="link contact-nav__link" href="tel:+380961111111">
-						<svg class="contact-nav__icon" width="10" height="16">
-							<use href="./images/svg/sprite.svg#icon-smartphone"></use>
-						</svg>
-						+38 096 111 11 11
-					</a>
-				</li>
-			</ul>
-			<button class="mobile-menu__btn" data-menu-button>
-				<svg class="mobile-menu__icon">
-					<use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
-					<use class="icon-cross" href="./images/svg/sprite.svg#icon-cross"></use>
-				</svg>
-			</button>
+				<button class="mobile-menu__btn" data-menu-button>
+					<svg class="mobile-menu__icon">
+						<use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
+						<use class="icon-cross" href="./images/svg/sprite.svg#icon-cross"></use>
+					</svg>
+				</button>
+			</div>
 		</div>
 	</header> 
-		<div class="mobile-menu" data-menu>
-			<ul class="list site-nav">
-				<li class="site-nav__item"><a class="link site-nav__link" href="./index.html">Студия</a>
-				</li>
-				<li class="site-nav__item"><a class="link site-nav__link" href="./portfolio.html">Портфолио</a></li>
-				<li class="site-nav__item"><a class="link site-nav__link" href="">Контакты</a></li>
-			</ul>
-		</div>
+			<div class="mobile-menu" data-menu>
+				<ul class="list mobile-menu__list">
+					<li class="mobile-menu__item">
+						<a class="link mobile-menu__link" href="./index.html">Студия</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a class="link mobile-menu__link" href="./portfolio.html">Портфолио</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a class="link mobile-menu__link" href="">Контакты</a>
+					</li>
+				</ul>
+				<div class="mobile-contacts">
+					<ul class="list mobile-contacts__list">
+						<li class="mobile-contacts__item">
+							<a class="link mobile-contacts__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+						</li>
+						<li class="mobile-contacts__item">
+							<a class="link mobile-contacts__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="list mobile-socials__list">
+						<li class="mobile-socials__item">
+							<a class="link mobile-socials__link" href="" rel="noopener noreferrer">Instagram</a>
+						</li>
+						<li class="mobile-socials__item">
+							<a class="link mobile-socials__link" href="" rel="noopener noreferrer">Twitter</a>
+						</li>
+						<li class="mobile-socials__item">
+							<a class="link mobile-socials__link" href="" rel="noopener noreferrer">Facebook</a>
+						</li>
+						<li class="mobile-socials__item">
+							<a class="link mobile-socials__link" href="" rel="noopener noreferrer">Linkedin</a>
+						</li>
+					</ul>
+				</div>
+			
+			</div>
 	<!-- Main -->
 	<main>
 		<!-- Герой -->
@@ -100,7 +132,7 @@
 			</div>
 		</section>
 		<!-- Чем мы занимаемся -->
-		<!-- <section class="section example-work">
+		<section class="section example-work">
 			<div class="container">
 				<h2 class="section__title">Чем мы занимаемся</h2>
 				<ul class="list grid example-work__list">
@@ -124,7 +156,7 @@
 					</li>
 				</ul>
 			</div>
-		</section> -->
+		</section>
 		<!-- Наша команда -->
 		<section class="section our-team">
 			<div class="container">

@@ -1,9 +1,24 @@
 .contact-nav {
   display: flex;
   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-left: auto;
+  }
 }
 .contact-nav__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-nav__link {
@@ -26,6 +41,14 @@
   &:hover .contact-nav__icon,
   &:focus .contact-nav__icon {
     fill: currentColor;
+  }
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
   }
 }
 

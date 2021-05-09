@@ -1,13 +1,32 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+  &.container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
 }
 
 .page-header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .page-header__logo {
-  margin: 24px 93px 25px 0px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 .page-header__nav {
   display: flex;

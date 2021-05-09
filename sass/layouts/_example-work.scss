@@ -1,5 +1,9 @@
 .example-work {
+  display: none;
   padding-top: 0px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .example-work__list {

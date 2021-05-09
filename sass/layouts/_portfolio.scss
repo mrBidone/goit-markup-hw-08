@@ -3,7 +3,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: none;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .our-work__list {
-  --grid-item: 3;
+  --grid-item: 1;
   position: relative;
   overflow: hidden;
 
@@ -40,6 +40,13 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid-item: 3;
   }
 }
 
