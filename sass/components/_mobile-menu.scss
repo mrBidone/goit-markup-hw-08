@@ -71,6 +71,7 @@
 .mobile-menu__link {
   display: block;
   font-size: 40px;
+  font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -96,6 +97,7 @@
 }
 .mobile-contacts__link--tel {
   font-size: 34px;
+  font-weight: 500;
   line-height: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -103,6 +105,7 @@
 }
 .mobile-contacts__link--mail {
   font-size: 24px;
+  font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: inherit;
@@ -123,6 +126,7 @@
 
 .mobile-socials__link {
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);

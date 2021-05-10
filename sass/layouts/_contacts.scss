@@ -50,6 +50,10 @@
     padding-bottom: 0;
     margin-right: 0;
   }
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 14px;
+  }
 }
 
 .contact-nav__icon {
